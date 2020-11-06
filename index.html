@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <title>Flights</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="blue-airplane-container">
+        <div class="blue-airplane">
+          <img
+            class="img"
+            src="./images/blue-airplane.png"
+            alt="blue-airplane"
+          />
+        </div>
+        <div class="nav-city">
+          <h3 id="nyc1"><b>NYC -- REK</b></h3>
+          <p id="nyc11">Apr 7 - 21</p>
+        </div>
+      </div>
+
+      <div class="black-airplane-container">
+        <div class="black-airplane">
+          <img
+            class="img"
+            src="./images/black-airplane.png"
+            alt="black-airplane"
+          />
+        </div>
+        <div class="nav-city">
+          <h3 id="nyc2"><b>NYC -- REK</b></h3>
+          <p id="nyc22">Aug 5 - 19</p>
+        </div>
+      </div>
+    </nav>
+
+    <div class="flight-search">
+        <div class="destination-type">
+        <p>New York (NYC)</p>
+        <p>Reykjavik (REK)</p>
+        </div>
+        <img id="calendar-icon" src="images/calendar.png" alt="calendar-icon" />
+        <button id="date-button" type="button" class="btn btn-primary">
+            Tue Aug 5
+        </button>
+        <p id="dash">-</p>
+        <button id="date-button" type="button" class="btn btn-primary">
+            Tue Aug 19
+        </button>
+        <p class="fiveteen">15 days x</p>
+        <button id="search-one" type="button" class="btn btn-primary"><b>Search</b></button>
+        <button id="add-button" type="button" class="btn btn-primary"><b>+</b></button>
+    </div>
+    
+
+    <!-- BEGINNING OF LEFT CONTAINER -->
+
+    <div class="under-search-bar">
+      <div class="left-side-bar">
+        <div class="left-col-one">
+          <ul>
+            <li><a href="#">Price alert</a></li>
+            <li><a href="#">Airline Fees</a></li>
+            <li><a href="#">Fare Charts</a></li>
+          </ul>
+          <div class="flex-dates">
+            <p>Flex Dates:</p>
+            <a href="#">+3 days | Explorer</a>
+          </div>
+        </div>
+        <div class="left-one">
+        <hr id="left-one" />
+       </div>
+
+        <div class="left-col-two">
+          <h3 id="trend"><b>Price Trend</b></h3>
+          <img id="graph" src="images/graph.png" />
+          <div class="advice-confidence">
+            <h2 id="advice">Advice: Wait</h2>
+            <h2 id="confidence">Confidence: 79%</h2>
+          </div>
+          <p id="price-may">Prices may fall within 7 days</p>
+        </div>
+        <div class="left-one">
+            <hr/>
+        </div>
+
+        <div class="left-col-three">
+            <h3 id="trend"><b>Stops</b></h3>
+            <div class="s-p-row">
+                <form method="action=">
+                <div class="stop-one">
+                    <input type="checkbox" name="one" />
+                    <p id="stops">nonstop</p>
+                    <p id="price-one">$863</p>
+                </div>
+                <div class="stop-two">
+                    <input type="checkbox" name="two" />
+                    <p id="stops">1 stop</p>
+                    <p id="price-two">$1000</p>
+                </div>
+                <div class="stop-three">
+                    <input type="checkbox" name="three" />
+                    <p id="stops">2+ stops</p>
+                    <p id="price-three">$2731</p>
+                </div>
+            </div>
+          </form>
+          <a id="show-airline" href="#">Show airline/stop price matrix</a>
+        </div>
+        <div class="left-one">
+            <hr/>
+        </div>
+
+        <div class="left-col-four">
+            <div class="times">
+                <h3 id="trend"><b>Times</b></h3>
+                <div class="time-takeoff">
+                    <p id="board-time"><b>Take-off New York</b></p>
+                    <p id="duration-time">Tue 2:00pm - Wed 12:00am</p>
+                </div>
+                <form class="multi-range">
+                    <img class="slider" src="images/slider.png" alt="slider">
+                </form>
+                <div class="time-takeoff">
+                    <p id="board-time"><b>Take-off Reykjavik</b></p>
+                    <p id="duration-time">Tue 12:00am - Wed 12:00am</p>
+                </div>
+                <form class="multi-range">
+                    <img class="slider" src="images/slider.png" alt="slider">
+                </form>
+                <div class="landing">
+                    <a href="#">Show landing Times</a>
+                </div>
+        <div class="left-one-one">
+            <hr />
+        </div>
+            </div>
+
+            <div class="airports">
+                <h3 id="trend"><b>Airports</b></h3>
+                <div class="check-depart">
+                    <input type="checkbox" name="four" />
+                    <p id="dep-ret">Depart/Return, same airports</p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- END OF LEFT CONTAINER -->
+      <!-- BEGINNING OF RIGHT CONTAINER -->
+
+      <div class="right-side-bar">
+        <div class="right-col-one">
+            <div class="show-all">
+                <h3 id="fifteen"><b>15</b> of<b> 64 flights</b></h3>
+                <a id="all-show" href="#">Show all</a>
+            </div>
+          <div class="sort-price">
+            <p><b>Sort by price (low to high)<b></p>
+          </div>
+        </div>
+        <div class="right-one">
+            <hr/>
+        </div>
+
+        <div class="right-col-two">
+            <div class="sub-col">
+                <div class="check-rates">
+                    <h3 id="rates-check"><b>Check Rates</b></h3>
+                    <button class="select-button" type="button" class="btn btn-primary"><b>Select</b></button>
+                </div>
+            <div class="right-one-vertical">
+                <hr>
+            </div>
+                <div class="fast-flights">
+                    <h3 id="fast"><b>Faster Flights. More Legroom. 2 Bags Free</b></h3>
+                    <p id="save">Save time and money with Icelandair on your way to Reykjavik</p>
+                    <a class="landair" href="#">Icelandair.us</a>
+                </div>
+                <div class="righty">
+                    <p id="ad">ad</p>
+                    <img id="ice1" src="./images/icelandair.png" alt="icelandair-logo" />
+                </div>
+            </div>
+            <div class="right-one-horizontal">
+                <hr>
+            </div>
+        </div>
+
+        <div class="right-col-three">
+            <div class="eight">
+                <h3 id="price-eight"><b>$863</b></h3>
+                <p class="kayak">KAYAK</p>
+                <button class="select-button" type="button" class="btn btn-primary"><b>Select</b></button>
+                <div class="orbitz">
+                    <a href="#">Orbitz</a>
+                    <a id="nine" href="#">$902</a>
+                </div>
+                <div class="cheap">
+                    <a href="#">Cheap Tickets c...</a>
+                    <a id="nine" href="#">$902</a>
+                </div>
+                <div class="sites">
+                    <a href="#">6 more sites</a>
+                </div>
+            </div>
+            <div class="right-one-vertical-two">
+                <hr>
+            </div>
+
+
+        
+            <div class="row-two-col-two">
+                <div class="container-two">
+                    <div class="container-two-two">
+                        <div class="ice-img">
+                            <img id="ice" src="images/Icelandair2.png" alt="icelandair-logo" />
+                        </div>
+                        <div class="flight-info">
+                            <div class="iceairheader">
+                                <h3 id="airice"><b>Icelandair</b></h3>
+                            </div>
+                            <div class="way-one">
+                                <p>JFK</p>
+                                <b>2:10p</b>
+                                <img id="arrow" src="./images/arrow.png" alt="arrow-icon" />
+                                <p>KEF</p>
+                                <b>11:40p</b>
+                                <p id="duration-time">5h 30m</p>
+                                <p></p>
+                                <p>nonstop</p>
+                            </div>
+
+                            <div class="way-two">
+                                <p>KEF</p>
+                                <b>10:30a</b>
+                                <img id="arrow" src="./images/arrow.png" alt="arrow-icon" />
+                                <p>JFK</p>
+                                <b>12:25p</b>
+                                <p id="duration-time">5h 55m</p>
+                                <p></p>
+                                <p>nonstop</p>
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="buttonz">
+                            <div class="buttonz-two">
+                                <button class="button-tw" type="button" class="btn btn-primary"><b>Details</b></button>
+                                <button class="button-two" type="button" class="btn btn-primary"></b>Fares</b></button>
+                            </div>
+                            <div class="eco-flight">
+                                <p class="eco"></p><b>Economy</b></p>
+                                <p><b>Icelandair operates flight 612, 613.</b></p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="right-one-horizontal">
+                <hr>
+            </div>
+         </div>
+
+
+         <div class="right-col-four">
+            <div class="eight">
+                <h3 id="price-eight"><b>$863</b></h3>
+                <p class="kayak">KAYAK</p>
+                <button class="select-button" type="button" class="btn btn-primary"><b>Select</b></button>
+                <div class="orbitz">
+                    <a href="#">Orbitz</a>
+                    <a id="nine" href="#">$902</a>
+                </div>
+                <div class="cheap">
+                    <a href="#">Cheap Tickets c...</a>
+                    <a id="nine" href="#">$902</a>
+                </div>
+                <div class="sites">
+                    <a href="#">6 more sites</a>
+                </div>
+            </div>
+            <div class="right-one-vertical-three">
+                <hr>
+            </div>
+
+        
+            <div class="row-two-col-two">
+                <div class="container-two">
+                    <div class="container-two-two">
+                        <div class="ice-img">
+                            <img id="ice" src="images/Icelandair2.png" alt="icelandair-logo" />
+                        </div>
+                        <div class="flight-info">
+                            <div class="iceairheader">
+                                <h3 id="airice"><b>Icelandair</b></h3>
+                            </div>
+                            <div class="way-one">
+                                <p id="ewr">EWR</p>
+                                <b>8:45p</b>
+                                <img id="arrow" src="./images/arrow.png" alt="arrow-icon" />
+                                <p>KEF</p>
+                                <b>6:15a</b>
+                                <p id="duration-time">5h 30m</p>
+                                <p></p>
+                                <p>nonstop</p>
+                            </div>
+
+                            <div class="way-two">
+                                <p>KEF</p>
+                                <b>10:30a</b>
+                                <img id="arrow" src="./images/arrow.png" alt="arrow-icon" />
+                                <p id="jfk">JFK</p>
+                                <b>12:25p</b>
+                                <p id="duration-time">5h 55m</p>
+                                <p></p>
+                                <p>nonstop</p>
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="buttonz">
+                            <div class="buttonz-two">
+                                <button class="button-tw" type="button" class="btn btn-primary"><b>Details</b></button>
+                                <button class="button-two" type="button" class="btn btn-primary"><b>Fares</b></button>
+                            </div>
+                            <div class="eco-flight-two">
+                                <img id="moon" src="./images/moon.png" alt="moon" />
+                                <p class="eco"></p><b>Economy</b></p>
+                                <p><b>Icelandair operates flight 622, 613.</b></p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="right-one-horizontal">
+                <hr>
+            </div>
+         </div>
+
+
+         <div class="right-col-five">
+            <div class="eight">
+                <h3 id="price-eight"><b>$863</b></h3>
+                <p class="kayak">KAYAK</p>
+                <button class="select-button" type="button" class="btn btn-primary"><b>Select</b></button>
+            </div>
+            <div class="right-one-vertical-four">
+                <hr>
+            </div>
+
+            <div class="row-two-col-two">
+                <div class="container-two">
+                    <div class="container-two-two">
+                        <div class="ice-img-two">
+                            <img id="ice" src="images/Icelandair2.png" alt="icelandair-logo" />
+                        </div>
+                        <div class="flight-info-two">
+                            <div class="iceairheader">
+                                <h3 id="airice"><b>Icelandair</b></h3>
+                            </div>
+                            <div class="way-one">
+                                <p>JFK</p>
+                                <b>8:40p</b>
+                                <img id="arrow" src="./images/arrow.png" alt="arrow-icon" />
+                                <p>KEF</p>
+                                <b>6:15a</b>
+                                <p id="duration-time">5h 35m</p>
+                                <p></p>
+                                <p>nonstop</p>
+                            </div>
+
+                            <div class="way-two">
+                                <p>KEF</p>
+                                <b>10:30a</b>
+                                <img id="arrow" src="./images/arrow.png" alt="arrow-icon" />
+                                <p>JFK</p>
+                                <b>12:25p</b>
+                                <p id="duration-time">5h 55m</p>
+                                <p></p>
+                                <p>nonstop</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="eco-flight-three">
+                        <img id="moon-two" src="./images/moon.png" alt="moon" />
+                    </div>
+                </div>
+            </div>
+    </div>
+  </body>
+</html>
